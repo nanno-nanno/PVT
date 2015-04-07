@@ -1,3 +1,7 @@
+import NativePackagerKeys._
+
+herokuAppName in Compile := "apple-pie-2645"
+
 name := """packagename"""
 
 version := "1.0-SNAPSHOT"
@@ -12,3 +16,5 @@ libraryDependencies ++= Seq(
   cache,
   javaWs
 )
+
+libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.27"
